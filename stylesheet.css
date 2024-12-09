@@ -1,0 +1,431 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #f6f4e9;
+    overflow-x: hidden;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#logo img {
+    max-width: 100px;
+    height: auto;
+    margin-left: 0;
+}
+
+#navegador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#navegador ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navegador li {
+    margin-right: 20px;
+}
+
+#navegador a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    display: block;
+    text-align: center;
+}
+
+#navegador a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+#menu-toggle {
+    display: none; 
+}
+
+#menu {
+    display: none; 
+    background-color: black;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%; 
+    z-index: 999;
+    flex-direction: row; 
+    position: static;  
+    padding: 0;
+    justify-content: right;
+    font-size: 20px;
+}
+
+#menu:not(.hidden) {
+    display: flex; 
+}
+
+main, #iniciopelículas,
+#iniciotópicos,
+#iniciocineastas {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 60px auto; 
+    padding: 0;
+    max-width: 1200px; 
+    gap: 10px; 
+    padding-top: 70px;
+}
+
+main img {
+    max-width: 300px; 
+    height: auto;
+    margin: 0, 0, 0,0; 
+}
+
+main img:first-child {
+margin-left: -80px;
+}
+
+main img:last-child {
+    margin-right: -80px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 0;
+    margin-bottom: 100px;
+}
+
+h1 {
+  font-family: 'Cormorant Garamond';
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.button {
+    display:flex; 
+    align-items: center;
+    justify-content: center; 
+    text-decoration: overline;
+    font-size: 20px;
+    margin-top: -50px;
+    color: #000000;
+}
+
+.button:hover {
+    color: rgb(100, 0, 0);
+    transform: scale(1.10);
+}
+
+blockquote {
+    display: flex;
+    flex-shrink: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    flex-direction: column;
+    text-align: center;
+    background: #000000;
+    padding: 70px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin: auto;
+    margin-top: -100px;
+  }
+
+  #entradas {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 80px;
+    text-align: left;
+    margin-top: 180px;
+    margin-left: 70px;
+  }
+  
+  .articulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+    cursor: pointer;
+    transition: transform 0.1s;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 600px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    height: 150px;
+    background-image: url(img/entradas.jpeg);
+  }
+  
+  article:hover {
+    transform: scale(1.05);
+  }
+  
+  article a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  article img {
+    border-radius: 10px;
+    width: 120px;
+    height: 80px;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  article h3,
+  article p {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    margin: 5px;
+    font-size: 15px;
+    max-width: 100%;
+    text-align: justify;
+    color: #000000;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  #houseofhummingbird {
+    margin-top: 30px;
+  }
+  #suscribirse {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px;
+    align-items: flex-start;
+    background: #000000;
+    color: #ffffff;
+    padding: 30px;
+    gap: 5px; 
+}
+
+#calltoaction {
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-top: 80px;
+    flex: 1; 
+}
+
+form {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 16px;
+    margin: auto;
+    gap: 5px;
+    width: auto;
+}
+
+label {
+  margin-top: 25px;
+    margin-bottom: 2px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+input[type="text"], 
+input[type="email"], input[type="tel"],input[type="textarea"]{
+    width: auto; 
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #000000;
+}
+
+input::placeholder {
+    color: #000000;
+}
+
+button[type="submit"] {
+    color: #000000;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width:auto; 
+}
+
+button[type="submit"]:hover {
+    background-color: #2e0101;
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 768px) {
+    #suscribirse {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #calltoaction {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    form {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    input[type="text"], 
+    input[type="email"], input[type="tel"] {
+        width: calc(100% - 20px);
+    }
+
+    button[type="submit"] {
+        width: calc(100% - 20px);
+        margin: 0 auto;
+    }
+}
+
+
+#iniciopelículas,
+#iniciotópicos,
+#iniciocineastas {
+    display: flex;
+    flex-direction: column;
+}
+
+#artpelículas,
+#arttópicos,
+#artcineastas {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.películas,
+.tópicos,
+.cineastas {
+  margin: 0 4px 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.películas h2,
+.tópicos h2,
+.cineastas h2 {
+  font-size: 25px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.películas p,
+.tópicos p,
+.cineastas p {
+  font-size: 18px;
+}
+
+.películas img,
+.tópicos img,
+.cineastas img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+}
+
+.fecha {
+  margin: 4px 0;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.leer {
+  display: block;
+  width: 100px;
+  margin: 10px auto;
+  background-color: #2e0101;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1px;
+    text-align: center;
+    gap: 5px;
+  }
+  
+  #footer {
+    margin-bottom: 30px;
+  }
+  
+  #mail {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .redes {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .redes li {
+    display: inline;
+    margin: auto;
+  }
+  
+  .redes li a {
+    color: #b9d3f0;
+  }
+  
+  .redes a:hover {
+    text-decoration: underline;
+  }
+  

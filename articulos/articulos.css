@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f4f1ea;
+    color: #333333;
+    line-height: 1.8;
+    margin-top: 50px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo img {
+    max-width: 80px;
+    height: auto;
+    margin-left: 0;
+    padding: 0;
+    border: none;
+    margin-top: 30px;
+}
+
+#navegador {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 30px 20px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 60px;
+    left: 0;
+}
+
+#navegador ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navegador li {
+    margin-right: 20px;
+}
+
+#navegador a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px; 
+    display: block;
+    text-align: center;
+    font-size: 0.9rem; 
+    width: 100%;
+    margin: auto;
+}
+
+#navegador a:hover {
+    color: black;
+    background-color: white;
+}
+
+#menu-toggle {
+    display: none; 
+}
+
+#menu {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: auto;
+    z-index: 999;
+    flex-direction: row;
+    justify-content: right;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#menu:not(.hidden) {
+    display: flex; 
+}
+
+main, #iniciopelículas, #iniciotópicos, #iniciocineastas {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 60px auto; 
+    padding: 0;
+    gap: 10px; 
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #4a3b2e;
+    margin: 20px 0;
+    text-align: center;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #d6c6a8;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    margin: 15px 0;
+    padding: 0 15px;
+    text-align: justify;
+    max-width: 800px;
+}
+
+button {
+    background-color: #4a3b2e;
+    color: #f4f1ea;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: 'Georgia', serif;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #6b5745;
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: #f4f1ea;
+}
+
+a:hover {
+    text-decoration: underline;
+}

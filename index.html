@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rollo Feminista</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Gupter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div>
+    <header id="header">
+        <nav id="navegador">
+            <div id="logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <button id="menu-toggle" aria-label="menu-toggle">
+                ☰
+            </button>
+            <ul id="menu" class="hidden">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#nombre">Suscribirse</a></li>
+                <li><a href="#iniciopelículas">Películas</a></li>
+                <li><a href="#iniciotópicos">Tópicos</a></li>
+                <li><a href="#iniciocineastas">Cineastas</a></li>
+                <li><a href="#footer">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <img id="ParkNamOk" src="img/polaroid1.png" alt="Park Nam Ok usando una cámara">
+        <div>
+            <h1>ROLLO FEMINISTA</h1>
+            <p>
+                Un espacio dedicado al cine desde una perspectiva feminista. Nos enfocamos en abordar temas relevantes
+                dentro del audiovisual y de darle voz a las mujeres en esta área, resaltando sus contribuciones e
+                impacto dentro de la cultura cinematográfica.
+            </p>
+            <a href="#entradas" class="button">Ver más</a>
+        </div>
+        <img id="JessieMaple" src="img/polaroid2.png" alt="Jessie Maple con una cámara">
+
+    </main>
+
+    <blockquote>
+        <q>El cine es un espejo de la sociedad, que nos muestra tanto lo hermoso
+            como lo feo de la condición humana.</q>
+        <cite>Agnès Varda</cite>
+    </blockquote>
+
+    <section id="entradas">
+        <h2>ÚLTIMAS ENTRADAS</h2>
+        <div class="articulos">
+            <article id="houseofhummingbird">
+                <a href="articulos/hoh2018.html">
+                    <img src="img/houseofhummingbird.jpeg"
+                        alt="Frame de la película House of Hummingbird donde la protagonista y su mejor amiga, dos adolescentes de 14 años, están sentadas en el suelo de un cuarto leyendo historietas">
+                    <div>
+                        <h3><i>House of Hummingbird (2018)</i></h3>
+                        <p>
+                            La primera película de la directora Kim Bora nos demuestra que,
+                            sin importar el año ni el país, la transición de la niñez a la
+                            adolescencia es una experiencia...
+                        </p>
+                    </div>
+                </a>
+            </article>
+
+            <article id="testbechdel">
+                <a href="articulos/testbechdel.html">
+                    <img src="img/bechdel.jpg" alt="Historieta donde salió por primera vez el test de Bechdel">
+                    <div>
+                        <h3><i>Test de Bechdel</i></h3>
+                        <p>
+                            En 1985, una historietista llamada Alison Bechdel, publicó una
+                            tira cómica que revolucionó la manera en la que vemos el cine.
+                        </p>
+                    </div>
+                </a>
+            </article>
+            <article id="LospaisajesdeAgnèsVarda">
+                <a href="articulos/agnesvarda.html">
+                    <img src="img/agnes.jpg" alt="Agnes Varda de joven mirando por una cámara">
+                    <div>
+                        <h3><i>Los paisajes de Agnès Varda</i></h3>
+                        <p>
+                            Agnès Varda, la influyente cineasta, fotógrafa y artista visual belga, ha dejado una huella
+                            imborrable en
+                            la
+                            historia del cine.
+                        </p>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+    <div id="suscribirse">
+        <div id="calltoaction">
+        <h3>SUSCRIBITE</h3>
+        <p>
+            Mantente al día recibiendo contenido directo en tu bandeja de entrada.
+        </p>
+        </div>
+        <form action="/submit" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+    
+            <label for="mail">Email</label>
+            <input type="email" id="mail" name="mail" placeholder="Ingresa tu email" required>
+    
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" title="Por favor, ingresa un número de teléfono válido." placeholder="Ingresa tu teléfono" required>
+    
+            <label for="color">¿Con qué color quieres recibir las notificaciones?
+            </label>
+            <input type="color" id="color" name="color" value="#2e0101" required>
+    
+            <label for="mensaje">¿Qué tipo de contenido te interesa más?
+            </label>
+            <textarea id="mensaje" name="mensaje" rows="5" cols="40" placeholder="¡Podés dejar sugerencias!" required></textarea>
+    
+            <button type="submit" class="submit">Enviar</button>
+        </form>
+    </div>
+    
+    
+    <section>
+        <div id="iniciopelículas">
+            <h1>PELÍCULAS</h1>
+            <p>
+                Reflexiones sobre el cine desde una perspectiva de género: personajes
+                femeninos y narrativas que revelan la complejidad y diversidad de las
+                experiencias de las mujeres en la pantalla.
+            </p>
+            <a href="#artpelículas" class="button">Ver más</a>
+        </div>
+        <div id="artpelículas">
+            <div class="películas">
+                <img src="img/houseofhummingbird.jpeg" alt="Frame de la película House of Hummingbird donde la protagonista y su mejor amiga, dos adolescentes de 14 años, están sentadas en el suelo de un cuarto leyendo historietas">
+                <div class="fecha">28/10/2024</div>
+                <h2><i>House of Hummingbird (2018)</i></h2>
+                <p>
+                    La primera película de la directora Kim Bora nos demuestra que, sin
+                    importar el año ni el país, la transición de la niñez a la
+                    adolescencia es una experiencia con la que todas las mujeres podemos
+                    identificarnos.
+                </p>
+                <a href="articulos/hoh2018.html" class="button">Leer</a>
+            </div>
+            <div class="películas">
+                <img src="img/gyr.jpg" alt="Las protagonistas de Ginger y Rosa mirándose enfrentadas.">
+                <div class="fecha">20/5/2024</div>
+                <h2><i>Ginger y Rosa (2012)</i></h2>
+                <p>
+                    Ginger & Rosa (2012), dirigida por Sally Potter, es vendida como un drama sobre dos mejores amigas en Londres de los años 60. La realidad es que es muchísimo más que solo eso. 
+                </p>
+                <a href="articulos/gyr.html" class="button">Leer</a>
+            </div>
+            <div class="películas">
+                <img src="img/pobrescriaturas.jpg" alt="Emma Stone en primer plano con artefactos a su alrededor.">
+                <div class="fecha">04/01/2024</div>
+                <h2><i>Pobres Criaturas (2023)</i></h2>
+                <p>
+                    Yorgos Lanthimos es conocido por sus narrativas incómodas y provocadoras, y Pobres Criaturas (Poor Things, 2023) no es la excepción. 
+                </p>
+                <a href="articulos/pobrescriaturas.html" class="button">Leer</a>
+            </div>
+        </div>
+    
+        <div id="iniciotópicos">
+            <h1>TÓPICOS</h1>
+            <p>
+                Miradas en cuanto a la representación de las mujeres en el cine y cómo
+                se moldean las experiencias femeninas.
+            </p>
+            <a href="#arttópicos" class="button">Ver más</a>
+        </div>
+        <div id="arttópicos">
+            <div class="tópicos">
+                <img src="img/bechdel.jpg" alt="Historieta donde salió por primera vez el test de Bechdel">
+                <div class="fecha">28/10/2024</div>
+                <h2><i>Test de Bechdel</i></h2>
+                <p>
+                    En 1985, una historietista llamada Alison Bechdel, publicó una tira
+                    cómica que revolucionó la manera en la que vemos el cine.
+                </p>
+                <a href="articulos/testbechdel.html" class="button">Leer</a>
+            </div>
+            <div class="tópicos">
+                <img src="img/femalerage.jpg" alt="Anya Taylor Joy en plano medio, el color de imagen es rojo furia">
+                <div class="fecha">17/05/2024</div>
+                <h2><i>Female Rage</i></h2>
+                <p>
+                    En la última década, el cine y la televisión han comenzado a explorar un territorio que durante mucho tiempo fue reprimido o caricaturizado: la female rage. 
+                </p>
+                <a href="articulos/femalerage.html" class="button">Leer</a>
+            </div>
+            <div class="tópicos">
+                <img src="img/manicpixie.webp" alt="Scott Pilgrim y Ramona.">
+                <div class="fecha">09/03/2024</div>
+                <h2><i>Manic Pixie Dream Girl</i></h2>
+                <p>
+                    El término Manic Pixie Dream Girl (MPDG) fue acuñado por el crítico Nathan Rabin en 2007, refiriéndose a un arquetipo de personaje femenino que aparece en el cine para transformar la vida de un hombre emocionalmente perdido. 
+                </p>
+                <a href="articulos/manixpixie.html" class="button">Leer</a>
+            </div>
+        </div>
+    
+        <div id="iniciocineastas">
+            <h1>CINEASTAS</h1>
+            <p>
+                Mujeres en la industria cinematográfica que dejaron su huella en
+                distintas áreas del audiovisual.
+            </p>
+            <a href="#artcineastas" class="button">Ver más</a>
+        </div>
+        <div id="artcineastas">
+            <div class="cineastas">
+                <img src="img/agnes.jpg" alt="Agnes Varda de joven mirando por una cámara">
+                <div class="fecha">28/10/2024</div>
+                <h2><i>Los paisajes de Agnès</i></h2>
+                <p>
+                    Influyente cineasta, fotógrafa y artista visual belga, considerada
+                    una de las figuras clave de la Nouvelle Vague francesa. Su estilo
+                    personal y su capacidad para fusionar documental y ficción la
+                    convirtieron en una pionera del cine feminista.
+                </p>
+                <a href="articulos/agnesvarda.html" class="button">Leer</a>
+            </div>
+            <div class="cineastas">
+                <img src="img/esfirshub.jpg" alt="Esfir Shub">
+                <div class="fecha">14/09/2024</div>
+                <h2><i>La arquitecta del montaje</i></h2>
+                <p>
+                    Esfir Shub, pionera del cine soviético y una de las figuras clave del montaje cinematográfico, revolucionó la
+        manera en que se construyen y cuentan las historias en la pantalla grande.
+                </p>
+                <a href="articulos/esfirshub.html" class="button">Leer</a>
+            </div>
+            <div class="cineastas">
+                <img src="img/naomi.jpg" alt="Naomi Kawase">
+                <div class="fecha">20/07/2024</div>
+                <h2><i>Los Secretos de Naomi Kawase</i></h2>
+                <p>
+                    Naomi Kawase, una de las voces más singulares del cine japonés contemporáneo, ha construido una carrera profundamente enraizada en la introspección, la conexión con la naturaleza y las emociones humanas más universales.
+                </p>
+                <a href="articulos/naomi.html" class="button">Leer</a>
+            </div>
+        </div>
+
+    </section>
+    
+    
+    <footer>
+        <div id="footer">
+            <h3>¡Contactanos y seguinos en las redes!</h3>
+            <div id="mail">
+                <p>rollofeminista@gmail.com</p>
+            </div>
+            <ul class="redes">
+                <li>
+                    <a href="https://www.instagram.com/luu.parrilla/">Instagram</a>
+                </li>
+                <li>
+                    <a href="www.linkedin.com/in/lucía-parrilla-412995325">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+</div>
+</body>
+
+</html>
